@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">safeGuard</string>
+
+    <array name="provincia">
+        <item>Selecione sua provincia</item>
+        <item>Niassa</item>
+        <item>Cabo Delgado</item>
+        <item>Nampula</item>
+        <item>Zambezia</item>
+        <item>Tete</item>
+        <item>Manica</item>
+        <item>Sofala</item>
+        <item>Gaza</item>
+        <item>Inhambane</item>
+        <item>Maputo cidade</item>
+        <item>Maputo provincia</item>
+    </array>
+
+    <array name="status">
+        <item>Baixa</item>
+        <item>Media</item>
+        <item>Elevada</item>
+    </array>
+
+    <array name="incidenes">
+        <item>Seleccione o tipo de incidente</item>
+        <item>Ma conduta do agente</item>
+        <item>Roubo</item>
+        <item>Violencia</item>
+        <item>Outros</item>
+    </array>
+
+    <array name="DocPerdido">
+        <item>Seleccione o tipo de documento perdido</item>
+        <item>Bilhete de identidade</item>
+        <item>Cartao de Leitor</item>
+        <item>Carta de conducao</item>
+        <item>Outros</item>
+    </array>
+
+    <array name="DocAchado">
+        <item>Seleccione o tipo de documento achado</item>
+        <item>Bilhete de identidade</item>
+        <item>Cartao de Leitor</item>
+        <item>Carta de conducao</item>
+        <item>Outros</item>
+    </array>
+
+    <array name="objAchado">
+        <item>Seleccione o tipo de objecto achado</item>
+        <item>carteira</item>
+        <item>chaves</item>
+        <item>Telefone celular</item>
+        <item>Óculos</item>
+        <item>bolsa</item>
+        <item>Bicicleta</item>
+        <item>Notebook ou tablet</item>
+        <item>joias</item>
+        <item>Brinquedos ou objetos de valor sentimental.</item>
+    </array>
+
+    <array name="objPerdido">
+        <item>Seleccione o tipo de objecto perdido</item>
+        <item>carteira</item>
+        <item>chaves</item>
+        <item>Telefone celular</item>
+        <item>Óculos</item>
+        <item>bolsa</item>
+        <item>Bicicleta</item>
+        <item>Notebook ou tablet</item>
+        <item>joias</item>
+        <item>Brinquedos ou objetos de valor sentimental.</item>
+    </array>
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backg"
+    android:layout_height="match_parent"
+    tools:context=".Tela_Registo">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/imagencircle"
+                    android:src="@drawable/policenew"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Policia da Republica De Mocambiqure "
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_full_name"
+                android:layout_below="@+id/textView_register_head"
+                android:text="Nome completo*"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="sans-serif-condensed-medium"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_register_full_name"
+                android:inputType="textPersonName"
+                android:textSize="15dp"
+                android:padding="12dp"
+                android:hint=""
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_below="@id/textView_full_name"
+                android:background="@drawable/edittext1"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_email"
+                android:layout_below="@+id/editText_register_full_name"
+                android:text="Email*"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="sans-serif-condensed-medium"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_register_email"
+                android:inputType="textEmailAddress"
+                android:textSize="15dp"
+                android:padding="12dp"
+                android:hint=""
+                android:layout_below="@id/textView_email"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edittext1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_telefone"
+                android:layout_below="@+id/editText_register_email"
+                android:text="Numero de telefone*"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="sans-serif-condensed-medium"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_telefone"
+                android:inputType="phone"
+                android:textSize="15dp"
+                android:padding="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint=""
+                android:layout_below="@id/textView_telefone"
+                android:background="@drawable/edittext1"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_registro_genero"
+                android:layout_below="@+id/editText_register_nascimento"
+                android:text="Genero*"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="sans-serif-condensed-medium"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/edittext1"
+                android:layout_below="@id/textView_registro_genero"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/radio_grupo">
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_femenino"
+                    android:text="Femenino"
+                    android:textSize="15sp"
+                    android:textColor="#555555"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_masculino"
+                    android:text="Masculino"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15sp"
+                    android:textColor="#555555"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_password"
+                android:layout_below="@+id/radio_grupo"
+                android:text="Palavra Passe*"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="sans-serif-condensed-medium"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_register_password"
+                android:inputType="textPassword"
+                android:textSize="15dp"
+                android:padding="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint=""
+                android:layout_below="@id/textView_password"
+                android:background="@drawable/edittext1"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/criar_conta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:gravity="center"
+                android:onClick="menu"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:layout_below="@+id/editText_confirm_password"
+                android:layout_marginTop="25dp"
+                android:text="Criar conta"/>
+
+
+            <TextView
+                android:id="@+id/politica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Ao criar a conta concordas e aceitas os nossos"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/politicaTermos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Termos e Politica de privacidade."
+                android:textColor="@color/azulCapri"
+                android:textSize="16dp" />
+
+
+
+            <TextView
+                android:id="@+id/logi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="Ja Tens Conta?"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"/>
+
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/azulCapri"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Iniciar sessao"
+                android:textSize="16dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/azulCapri"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
